@@ -46,7 +46,7 @@ for _ in range(len(song_titles)):
         uri = result["tracks"]["items"][0]["uri"]
         songs_uri.append(uri)
     except IndexError:
-        print(f"{song_titles[_]} doesn't exist in Spotify. Skipped")
+        print(f"Could not find {song_titles[_]} on Spotify. Skipped")
 
 print(songs_uri)
 
